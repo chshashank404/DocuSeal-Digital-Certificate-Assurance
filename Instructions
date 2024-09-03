@@ -1,0 +1,34 @@
+Steps for Successfully Running the DApp:
+
+1. Open Terminal and Navigate to the Project Directory: 
+   Change the directory path to where your project files are located.
+
+2. Verify Python Installation:
+   Run the command `python --version` to ensure that Python 3.10 or above is installed on your computer. If not, download it from [Python's official website](https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe).
+
+3. Install Required Packages:
+   Execute the command `pip install -r requirements.txt` to install all necessary dependencies listed in the `requirements.txt` file.
+
+4. Generate University Credentials:
+   Run `python generate.py` to create a `credentials.txt` file containing the university credentials, including the public key and mnemonic.
+
+5. Set Up Algorand Node Service:
+   Register and use the Algorand node service via [Nodely.io](https://nodely.io/).
+
+6. Configure Application with University Credentials:
+   Open the `app.py` file:
+   - Paste the university public key from the `credentials.txt` file into line 10.
+   - Paste your API key from your PureStake account into line 9.
+
+7. Run the Application:
+   Start the Flask server by running `python app.py`. The server will initiate, and the application can be accessed at [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
+
+8. Use the Application:
+   You can now use the DApp as intended. To log in as the university, use the mnemonic provided in the "university mnemonic" field of the `credentials.txt` file.
+
+Useful Links:
+- Python 3.10.7 Download: [Python 3.10.7](https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe)
+- Algorand Node Service: [Nodely.io](https://nodely.io/)
+- Application Link: [http://127.0.0.1:5000/](http://127.0.0.1:5000/) (Only accessible when the Flask app is running) 
+
+Follow these steps carefully to ensure the successful execution of your DApp!
